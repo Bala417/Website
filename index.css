@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+
+body {}
+
+.header {
+    background: url(pic2.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    position: relative;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+
+
+}
+
+.nav-item {
+    padding: 0px 0px;
+    color: rgb(245, 228, 182);
+    margin: 5px 20px;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-shadow: 0 1px 2px black;
+}
+
+.nav-item:hover {
+    color: orangered;
+    border-bottom: solid 3px;
+
+}
+
+.title {
+    font-family: sans-serif;
+    position: absolute;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+    color: rgb(250, 154, 9);
+    background: linear-gradient(90deg, hsla(348, 97%, 63%, 0.705) 0%, hsla(230, 96%, 62%, 0.705) 100%);
+    visibility: none;
+
+}
+
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5rem;
+    text-shadow: 0 2px 2px black;
+    animation: leftToRight 1s;
+
+}
+
+p {
+    font-size: 2rem;
+    animation: rightToLeft 1s;
+}
+
+.close-btn {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 2px black;
+}
+
+.btn {
+    color: antiquewhite;
+    background: rgba(206, 95, 5, 0.678);
+    padding: 10px 30px;
+    font-size: 2rem;
+    margin-top: 15px;
+    display: inline-block;
+    border-radius: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.705);
+
+}
+
+@keyframes leftToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%);
+
+    }
+
+    80% {
+        transform: translateX(5%);
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+
+    }
+
+    80% {
+        transform: translateX(-5%);
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+.btn:hover {
+    box-shadow: 1px 2px 3px black;
+}
+
+.btn:active {
+    background-color: rgba(240, 118, 18, 0.747);
+    color: rgba(233, 218, 7, 0.856);
+}
